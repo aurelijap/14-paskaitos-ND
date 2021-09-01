@@ -17,6 +17,9 @@ h1 {
 .duomenys button {
   padding: 4px;
 }
+.duomenys button {
+  background-color: blanchedalmond;
+}
 #table1 {
   font-family: poppins;
   border: 2px solid rgb(255, 196, 0);

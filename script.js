@@ -31,18 +31,30 @@ function addDuomenys() {
   row.appendChild(column2);
   row.appendChild(column3);
   tbody.appendChild(row);
+
+  inputVardas.value = '';
+  inputPavarde.value = '';
+  inputAmzius.value = '';
 }
 
 function removeFirstDuomenys() {
   var tbl = document.getElementById('table1');
   var tbody = tbl.getElementsByTagName('tbody')[0];
   var rows = tbody.getElementsByTagName('tr');
-  rows[0].remove();
+  if (rows.length == 0) {
+    alert('Nėra ką trinti.');
+  } else {
+    rows[0].remove();
+  }
 }
 
 function removeLastDuomenys() {
   var tbl = document.getElementById('table1');
   var tbody = tbl.getElementsByTagName('tbody')[0];
   var rows = tbody.getElementsByTagName('tr');
-  rows[rows.length - 1].remove();
+  if (rows.length == 0) {
+    alert('Nėra ką trinti.');
+  } else {
+    rows[rows.length - 1].remove();
+  }
 }
