@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>14 paskaitos namų darbas</title>
+    <style type="text/css"></style>
+  </head>
+  <body>
+    <h1>Append table</h1>
+
+    <div class="duomenys">
+      <input id="inputVardas" type="text" placeholder="vardas" />
+      <input id="inputPavarde" type="text" placeholder="pavardė" />
+      <input id="inputAmzius" type="number" placeholder="amžius" />
+    </div>
+
+    <div class="duomenys">
+      <button id="add">Pridėti</button>
+      <button id="removeFirst">Ištrinti pirmą</button>
+      <button id="removeLast">Ištrinti paskutinį</button>
+    </div>
+
+    <table id="table1">
+      <thead>
+        <tr>
+          <th id="vardas">VARDAS</th>
+          <th id="pavarde">PAVARDĖ</th>
+          <th id="amzius">AMŽIUS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jonas</td>
+          <td>Rimkus</td>
+          <td>54</td>
+        </tr>
+        <tr>
+          <td>Vestina</td>
+          <td>Petronytė</td>
+          <td>31</td>
+        </tr>
+        <tr>
+          <td>Marius</td>
+          <td>Dulinskas</td>
+          <td>23</td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
